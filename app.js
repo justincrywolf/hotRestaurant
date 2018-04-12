@@ -1,22 +1,27 @@
 // Dependencies
 var express = require( "express" );
+var bodyParser = require("body-parser");
+var path = require("path");
 
 var app = express();
-var PORT = process.env || 3000;
+var PORT = 3000;
 
 // Data
-var allTables = [];
+var allTables = [
+    {
+        name: "Caroline",
+        phone: 92384,
+        email: "something@gmail.com",
+        uniqueID: "booger"
+    }
+];
 
 // Guests
 
     // Reservations
-    var reservations = [{
-
-    }]
+    var reservations = [];
     // Waitlist
-    var waitlist = [{
-
-    }]
+    var waitlist = [];
 
 // Routes
 
@@ -38,7 +43,7 @@ var allTables = [];
 
         // Deliver JSON to weird useless links at the bottom
         app.get("/api/tables", function (req, res) {
-            return res.json( reservations );
+            return res.json( allTables );
         });
 
         app.get("/api/waitlist", function (req, res) {

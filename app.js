@@ -49,15 +49,15 @@ var allTables = [];
         app.post("/api/tables", function(req, res) {
             // req.body hosts is equal to the JSON post sent from the user
             // This works because of our body-parser middleware
-            var newrez = req.body;
+            var newReservation = req.body;
           
-            console.log(newcharacter);
+            console.log(newReservation);
           
             // We then add the json the user sent to the character array
-            characters.push(newcharacter);
+            allTables.push(newReservation);
           
             // We then display the JSON to the users
-            res.json(newcharacter);
+            res.json(newReservation);
           });
 
 

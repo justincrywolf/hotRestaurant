@@ -17,11 +17,11 @@
             <div class="text-center">
                 <h1>
                     <span class="glyphicon glyphicon-glass"></span>Hot Restaurant</h1>
-                <h3>Make your reservation</h3>
+                <h3>Current Reservation and Waiting List</h3>
                 <hr>
                 <a href="/addtable">
                     <button class="btn btn-primary btn-lg">
-                        <span class="glyphicon glyphicon-list-alt"></span> View Tables</button>
+                        <span class="glyphicon glyphicon-book"></span> View Tables</button>
                 </a>
                 <a href="/">
                     <button class="btn btn-default btn-lg">
@@ -29,6 +29,55 @@
                     </button>
                 </a>
 
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Make Reservation</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form class="form-horizontal">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for>Name</label>
+                                    <input type="text" class="form-control" id="input-name" placeholder="John Smith">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for>Phone Number</label>
+                                    <input type="text" class="form-control" id="input-number" placeholder="678-910-1112">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for>Email</label>
+                                    <input type="text" class="form-control" id="input-email" placeholder="johnsmith@gmail.com">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for>Unique ID</label>
+                                    <input type="text" class="form-control" id="input-id" placeholder="Unique ID">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-10">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10">
+                <a href="#">API Table Link</a> |
+                <a href="#">API Wait List</a>
             </div>
         </div>
     </div>

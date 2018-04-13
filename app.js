@@ -38,7 +38,7 @@ var allTables = [
         });
         // Displays reservation form
         app.get("/reserve", function (req, res) {
-            res.sendFile(path.join(__dirname, "reserve.html"))
+            res.sendFile(path.join(__dirname, "makeRes.html"))
         });
 
         // Deliver JSON to weird useless links at the bottom
